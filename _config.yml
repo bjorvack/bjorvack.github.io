@@ -61,3 +61,8 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - package.json
+  - package-lock.json
+  - README.md
+  - webpack.config.js
