@@ -20,10 +20,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install npm dependecies
-        with:
-          node-version: ${{ matrix.node-version }}
-        run: npm install && npm run build
+      - run: npm install && npm run build
 
         # include the lines below if you are using jekyll-last-modified-at
         # or if you would otherwise need to fetch the full commit history
