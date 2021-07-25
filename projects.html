@@ -1,0 +1,19 @@
+---
+layout: default
+title: Projects
+permalink: /projects
+---
+
+<div class="container mt-4">
+  {% for project in site.projects %}
+  <div class="card project-card">
+    <img src="{{ project.image }}" alt="{{ project.title }}">
+    <div class="card-body">
+      <h5 class="card-title">{{ project.title }}</h5>
+      <p class="card-text">{{ project.excerpt }}</p>
+      <a href="{{ project.url }}" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
